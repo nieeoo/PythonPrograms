@@ -1,12 +1,12 @@
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-c = float(input("Enter third number: "))
+def largest_of_three(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
 
-if a >= b and a >= c:
-    largest = a
-elif b >= a and b >= c:
-    largest = b
-else:
-    largest = c
 
-print("Largest number is:", largest)
+if __name__ == "__main__":
+    print(largest_of_three(10, 20, 30))
+    print(largest_of_three(50, 20, 10))
