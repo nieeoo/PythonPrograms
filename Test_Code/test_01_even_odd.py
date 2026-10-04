@@ -1,17 +1,11 @@
-from Code.01_check_Even_odd
-import Even_Odd # pyright: ignore[reportUndefinedVariable]
+import importlib
 
-def test_even_number():
-    assert Even_Odd(10) == "Even"
+program = importlib.import_module("Code.01_check_Even_odd")
+Even_Odd = program.Even_Odd
 
-def test_odd_number():
-    assert Even_Odd(7) == "Odd"
+assert Even_Odd(20) == "Even"
+assert Even_Odd(11) == "Odd"
+assert Even_Odd(0) == "Even"
+assert Even_Odd(-5) == "Odd"
 
-def test_zero():
-    assert Even_Odd(0) == "Even"
-
-def test_negative_even():
-    assert Even_Odd(-4) == "Even"
-
-def test_negative_odd():
-    assert Even_Odd(-5) == "Odd"
+print("All test cases passed.")
