@@ -1,7 +1,5 @@
 # PythonPrograms
 
-# PythonPrograms
-
 ## Python Programs and Test Commands
 
 This repository contains 20 Python programs and their corresponding test files.
